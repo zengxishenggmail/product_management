@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Configuration</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Database Configuration</h1>
+    <form action="/connect" method="POST">
+        <label for="host">Host:</label>
+        <input type="text" id="host" name="host" required>
+        
+        <label for="port">Port:</label>
+        <input type="number" id="port" name="port" required>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="database">Database:</label>
+        <input type="text" id="database" name="database" required>
+        
+        <button type="submit">Connect</button>
+    </form>
+</body>
+</html>
